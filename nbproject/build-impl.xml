@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="sifac-impl" default="default" basedir="..">
+    <property file="nbproject/private/private.properties"/>
+    <property file="nbproject/project.properties"/>
+    <target name="init">
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${dist.dir}"/>
+    </target>
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" destdir="${build.classes.dir}"
+               source="${javac.source}" target="${javac.target}"
+               encoding="${source.encoding}" includeantruntime="false"
+               debug="true" classpath="${javac.classpath}"/>
+    </target>
+    <target name="jar" depends="compile">
+        <jar destfile="${dist.jar}" basedir="${build.classes.dir}" manifest="${manifest.file}"/>
+    </target>
+    <target name="run" depends="compile">
+        <java classname="${main.class}" classpath="${run.classpath}" fork="true" failonerror="true">
+            <jvmarg value="-Dfile.encoding=UTF-8"/>
+        </java>
+    </target>
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+    <target name="javadoc" depends="init">
+        <javadoc sourcepath="${src.dir}" destdir="${dist.javadoc.dir}"
+                 encoding="${source.encoding}" docencoding="${source.encoding}"
+                 charset="${source.encoding}" failonerror="true"/>
+    </target>
+    <target name="default" depends="jar"/>
+</project>
