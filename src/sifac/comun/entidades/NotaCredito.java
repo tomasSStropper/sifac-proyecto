@@ -9,9 +9,23 @@ public class NotaCredito extends Documento {
         this.descuento = descuento;
     }
 
+    public double getDescuento() {
+        return descuento;
+    }
+
+    @Override
+    public String getTipo() {
+        return "Nota de crédito";
+    }
+
     @Override
     public double calcularTotal() {
         double monto = calcularSubtotal() * (1 - descuento / 100);
         return -monto * (1 + getImpuesto() / 100);
+    }
+
+    @Override
+    public int signoInventario() {
+        return 1;
     }
 }

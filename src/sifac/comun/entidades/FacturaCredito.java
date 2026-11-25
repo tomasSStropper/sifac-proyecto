@@ -9,6 +9,15 @@ public class FacturaCredito extends Documento {
         this.recargo = recargo;
     }
 
+    public double getRecargo() {
+        return recargo;
+    }
+
+    @Override
+    public String getTipo() {
+        return "Factura de crédito";
+    }
+
     @Override
     public double calcularTotal() {
         double monto = calcularSubtotal() * (1 + getImpuesto() / 100);
