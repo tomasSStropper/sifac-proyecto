@@ -4,3 +4,6 @@ nbproject/private/
 *.class
 *.jar
 PADRON_COMPLETO.txt
+target/
+nb-configuration.xml
+*.db
