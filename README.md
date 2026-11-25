@@ -1,6 +1,6 @@
 # SIFAC - Entrega 1
 
-Proyecto programado de Programación III (BIS06), ULatina.
+Proyecto programado de Programación III , ULatina.
 Carlos Tomás Tropper Azofeifa.
 
 SIFAC es un sistema para facturar en una ferretería: el cajero busca al cliente por su cédula, arma
@@ -79,7 +79,7 @@ Dónde está cada cosa que pide el enunciado:
 La evidencia de la condición de carrera está en `docs/evidencia` (antes y después) y la lista de
 requisitos con sus pruebas en `docs/MATRIZ_COMPROBACIONES.md`.
 
-## Limitaciones que conozco
+## Limitaciones que noté
 
 - Todavía no hay red: el "envío" es un cambio de estado después de una espera de 3 segundos.
 - Todo vive en memoria; al cerrar se pierde lo facturado.
