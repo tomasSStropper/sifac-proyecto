@@ -1,0 +1,11 @@
+Inventario inicial 1000 unidades; 8 cajas intentan vender 250 unidades cada una (2000 intentos).
+
+DESPUÉS: el mismo código con synchronized
+  ronda 1: ventas aceptadas 1000 | existencias finales    0 | vendidas de más    0 | cuadra
+  ronda 2: ventas aceptadas 1000 | existencias finales    0 | vendidas de más    0 | cuadra
+  ronda 3: ventas aceptadas 1000 | existencias finales    0 | vendidas de más    0 | cuadra
+
+SIFAC: Producto.descontar() real
+  ronda 1: ventas aceptadas 1000 | existencias finales    0 | vendidas de más    0 | cuadra
+  ronda 2: ventas aceptadas 1000 | existencias finales    0 | vendidas de más    0 | cuadra
+  ronda 3: ventas aceptadas 1000 | existencias finales    0 | vendidas de más    0 | cuadra

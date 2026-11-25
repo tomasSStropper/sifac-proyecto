@@ -1,0 +1,6 @@
+Inventario inicial 1000 unidades; 8 cajas intentan vender 250 unidades cada una (2000 intentos).
+
+ANTES: sin synchronized
+  ronda 1: ventas aceptadas 1020 | existencias finales   -2 | vendidas de más   20 | NO CUADRA
+  ronda 2: ventas aceptadas 1008 | existencias finales   -2 | vendidas de más    8 | NO CUADRA
+  ronda 3: ventas aceptadas 1022 | existencias finales   -1 | vendidas de más   22 | NO CUADRA
